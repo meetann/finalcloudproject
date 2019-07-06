@@ -1,0 +1,37 @@
+#!/usr/bin/python2
+
+import  cgi,cgitb,os,json
+import mysql.connector as mysql
+
+cgitb.enable()
+
+print  "Content-type:text/html"
+print  ""
+
+web=cgi.FieldStorage()
+user_name=web.getvalue('usr')
+
+conn=mysql.connect(user='root', password='redhat', host='localhost', database='aws')
+
+sql=conn.cursor()
+
+sql.execute('select distinct sec_grp from ec2 where user_name=%s',(user_name,))
+res=sql.fetchall()
+
+
+http://www.java2s.com/Tutorial/Python/0440__CGI-Web/Loginform.htm
+
+socket.error: [Errno 99] Cannot assign requested address
+
+
+<p> If Sender, 1.Download:<br> 2.Give execution permission.<br> 3.
+
+
+	</p>
+	<a href="/chatbox_shell/sender.sh" download>
+		<button type="button">Sender</button></a>
+
+	<p> If Receiver, Download: </p>
+	<a href="/chatbox_shell/receiver.sh" download>
+		<button type="button">Receiver</button></a>
+

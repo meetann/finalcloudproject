@@ -1,0 +1,28 @@
+<html>
+<body bgcolor="lightgrey">
+
+<h2>Launch ec2 Instance</h2>
+
+<form action="/cgi-bin/ec2.cgi" method=POST>
+  <fieldset>
+    <legend>Creating ec2:</legend>
+    Select AMI:
+    <select name = "ami">
+    <option value="ami-5b673c34">RedHat</option>
+    <option value="ami-0d773a3b7bb2bb1c1">Ubuntu</option>
+    <option value="ami-074811debc0b11bdf">Amazon Linux</option>
+  </select>
+  <br> <br>
+    Security Group:
+    <input type="text" name="sg" placeholder="Eg: mysecuritygrp1">
+  <br> <br>
+  	Availability Zone:
+  	<input type="text" name="availzone" placeholder="Eg: Mumbai"> 
+  <br> <br>
+  <input type="submit">
+  <br><br>
+  </fieldset>
+</form>
+
+</body>
+</html>

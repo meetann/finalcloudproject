@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="iaas_style.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="grey">
+<body>
+
+<h2>Select an OS</h2>
+
+<form method=POST action="../cgi-bin/iaas_backend.cgi">
+	<h5> OS Name:
+  <select name = "os">
+    <option value="Ubuntu">Ubuntu</option>
+    <option value="RedHat">RedHat</option>
+    <option value="rhel7">rhel7</option>
+    <option value="CentOS">CentOS</option>
+  </select> </h5>
+    <h5> RAM:
+  <select name = "ram">
+    <option value="500">500MB</option>
+    <option value="1024">1GB</option>
+    <option value="4096">4GB</option>
+  </select> </h5>
+    <h5> CPU:
+  <select name = "cpu">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="4">4</option>
+  </select> </h5>
+    <h5> Harddisk:
+  <select name = "hdd">
+    <option value="1">1Core</option>
+    <option value="2">2Core</option>
+    <option value="4">4Core</option>
+  </select> </h5>
+ 
+  <input type="submit">
+</form>
+
+</body>
+</html>
